@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 14, 2015 12:45:49 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.Student" table="student" schema="public" optimistic-lock="version">
+        <id name="examRollNo" type="big_decimal">
+            <column name="exam_roll_no" precision="32" scale="0" />
+            <generator class="native" />
+        </id>
+        <property name="classRollNo" type="big_decimal">
+            <column name="class_roll_no" precision="131089" scale="0" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" />
+        </property>
+        <property name="regNo" type="string">
+            <column name="reg_no" />
+        </property>
+        <property name="emailId" type="string">
+            <column name="email_id" />
+        </property>
+        <property name="paymentId" type="string">
+            <column name="payment_id" />
+        </property>
+        <property name="subjects" type="string">
+            <column name="subjects" />
+        </property>
+    </class>
+</hibernate-mapping>

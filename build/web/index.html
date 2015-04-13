@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Exam Submissin Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+h1 {
+    color:blue;
+    font-family:verdana;
+    font-size:300%;
+}
+p  {
+    color: cornflowerblue;
+    font-family:courier;
+    font-size:120%;
+    font-weight: lighter;
+    background: #FF9473;
+}
+
+label {
+  color: #269abc;
+  text-decoration: #FF9473;
+  font-weight: bolder;
+}
+
+label:hover {
+  color: red;
+  position: relative;
+}
+
+label[title]:hover:after {
+  content: attr(title);
+  padding: 4px 8px;
+  color: red;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  z-index: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #222;
+  box-shadow: 0px 0px 4px #222;
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+}
+
+
+
+</style>
+    </head>
+    <body>
+        <form class="form-horizontal" name="exam" action="write.jsp">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Exam Submission Form</legend>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="Name">Name</label>
+  <div class="controls">
+    <input id="Name" name="Name" type="text" placeholder="name" class="input-medium" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="classroll">Class Roll No</label>
+  <div class="controls">
+    <input id="classroll" name="classroll" type="text" placeholder="" class="input-medium">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="regno">Registration number</label>
+  <div class="controls">
+    <input id="regno" name="regno" type="text" placeholder="" class="input-medium">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="emailid">Email Id</label>
+  <div class="controls">
+    <input id="emailid" name="email_id" type="text" placeholder="@gmail.com" class="input-medium">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="payment_id">Payment Id</label>
+  <div class="controls">
+    <input id="payment_id" name="payment_id" type="text" placeholder="" class="input-medium">
+    
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="control-group">
+  <label class="control-label" for="subjects">Subjects</label>
+  <div class="controls">
+    <input id="subjects" name="subjects" type="text" placeholder="" class="input-medium">
+    
+  </div>
+</div>
+
+<br>
+<!-- Button -->
+<div class="control-group">
+  <label class="control-label" for="submit"></label>
+  <div class="controls">
+    <button id="submit" name="submit" class="btn btn-success">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+    </body>
+</html>
